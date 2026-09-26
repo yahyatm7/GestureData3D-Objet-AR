@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="GestureData 3D">
+  <rect width="64" height="64" rx="14" fill="#111111"/>
+  <g fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M30 15 L47 24.5 L47 43.5 L30 53 L13 43.5 L13 24.5 Z"/>
+    <path d="M13 24.5 L30 34 L47 24.5 M30 34 L30 53"/>
+    <path d="M47 9.5 a9 9 0 0 1 8.5 8.5" opacity=".55"/>
+    <path d="M47 4.5 a14 14 0 0 1 13.5 13.5" opacity=".3"/>
+  </g>
+  <circle cx="47" cy="18" r="4.2" fill="#ffffff"/>
+  <circle cx="30" cy="34" r="2.6" fill="#ffffff"/>
+</svg>

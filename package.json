@@ -1,0 +1,7 @@
+{
+  "name": "gesturedata3d-box",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node tools/build.mjs", "start": "python -m http.server 8000" },
+  "devDependencies": { "esbuild": "^0.23.1" }
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GestureData3D · Objet AR piloté par la main</title>
+<meta name="description" content="GestureData3D est une application interactive basée sur la Computer Vision, la détection des gestes et la 3D : un objet 3D se pose sur ta main et suit ses mouvements.">
+<meta name="author" content="Yahya Tamouch">
+<meta name="keywords" content="vision par ordinateur, MediaPipe, Three.js, machine learning, gestes, réalité augmentée, data science">
+<meta name="theme-color" content="#111111">
+<meta property="og:title" content="GestureData3D · Objet AR">
+<meta property="og:description" content="Application interactive : Computer Vision, détection des gestes et 3D.">
+<meta property="og:image" content="assets/logo-180.png">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/logo-180.png">
+<script>
+  // Appliquer le thème avant le premier rendu (évite le flash)
+  try { const t = localStorage.getItem('gd-theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="./" aria-label="GestureData3D">
+    <img class="brand-logo" src="assets/logo.svg" alt="" width="28" height="28">
+    <span class="brand-name">GestureData3D</span>
+    <span class="brand-sub">Computer Vision × gestes × 3D</span>
+  </a>
+  <span class="spacer"></span>
+  <div class="cam-status"><span class="dot" id="cam-dot"></span><span class="txt" id="cam-txt">Caméra inactive</span></div>
+  <button class="btn sm" id="cam-toggle">Activer la caméra</button>
+  <div class="seg sm" role="group" aria-label="Thème">
+    <button data-theme-set="light">Clair</button><button data-theme-set="dark">Sombre</button>
+  </div>
+</header>
+
+<main id="app" class="sec solo"></main>
+
+<footer class="solo-foot">GestureData3D · projet exploratoire · Yahya Tamouch, INSEA</footer>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<noscript><p style="padding:24px">Active JavaScript pour utiliser GestureData3D.</p></noscript>
+<!-- dist/app.js = tout le dossier js/ regroupé (npm run build) : fonctionne aussi par double-clic -->
+<script src="dist/app.js" defer></script>
+</body>
+</html>
