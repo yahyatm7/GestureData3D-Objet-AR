@@ -7,8 +7,8 @@ Tu montres ta main à la webcam et un cube 3D, texturé comme un circuit imprim�
 > 🔬 Projet exploratoire : l'objectif est de tester la chaîne complète *caméra → détection de la main → données → objet 3D* directement dans le navigateur.
 
 ![Cube circuit imprimé](docs/cube-circuit.jpg)
-![](![Uploading objet-ar-1790456414267.png…]()
-)
+
+![Test en conditions réelles avec caméra](docs/now.png)
 ---
 
 ## ✨ Fonctionnalités
